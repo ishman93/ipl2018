@@ -1,9 +1,9 @@
 <?php
 $dbhost = getenv("MYSQL_SERVICE_HOST");
 $dbport = getenv("MYSQL_SERVICE_PORT");
-$dbuser = getenv("ishman");
+$dbuser = getenv("user");
 $dbpwd = getenv("password");
-$dbname = getenv("ipl2018");
+$dbname = getenv("ipl2018db");
 
 $connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if($connection->connect_errno){
