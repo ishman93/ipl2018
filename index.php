@@ -9,7 +9,7 @@ printf($dbport);
 printf($dbuser);
 printf($dbpwd);
 printf($dbname);
-$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname,$dbport);
 if($connection->connect_errno){
    printf("Connection failed :%s\n", $mysqli -> connect_error);
    exit();
